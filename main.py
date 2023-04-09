@@ -1,8 +1,9 @@
 # Tackle Box Calculator
+# Coded on my android phone ;)
 
 # Item drop rate equation
 
-x = 2000 # Let x be the number of tackle boxes
+x = 5000 # Let x be the number of tackle boxes
 
 fishingfly_equation = (121/600) * x
 megapellet_equation = (31/600) * x
@@ -14,7 +15,7 @@ wiggly_equation = (93/200) * x
 
 total_drops = fishingfly_equation + megapellet_equation + salmon_equation + shiny_equation + shrimp_equation + uranium_equation +  wiggly_equation
 
-print(str(x) + " tackle boxes drop " + str(fishingfly_equation) + " Fishing Fly, " + str(megapellet_equation) + " Mega-Pellet Bait, " + str(salmon_equation) + " Salmon Eggs, " + str(shiny_equation) + " Shiny Flashy Thing, " + str(shrimp_equation) + " Shrimp Lure, " + str(uranium_equation) + " Uranium Glowing Lure and " + str(wiggly_equation) + " Wiggly Worm, " + str(total_drops) + " drops in total per harvest.")
+print(str(x) + " tackle boxes drop " + str(fishingfly_equation) + " Fishing Fly, " + str(megapellet_equation) + " Mega-Pellet Bait, " + str(salmon_equation) + " Salmon Eggs, " + str(shiny_equation) + " Shiny Flashy Thing, " + str(shrimp_equation) + " Shrimp Lure, " + str(uranium_equation) + " Uranium Glowing Lure and " + str(wiggly_equation) + " Wiggly Worm, " + str(total_drops) + " drops in total per harvest")
 
 # Item price rate
 
@@ -32,7 +33,10 @@ print("I will earn " + str(total_earned) + " WLS in total for every harvest (2 d
 
 # Tackle box price rate
 
-tackle_rate = 3.33 * x
+rate = 3.33 # Price rate of 1 tackle box (in WLS)
+
+tackle_rate = rate * x 
+tackle_rate_dls = tackle_rate / 100
 earn_wls = tackle_rate / (total_earned / 2)
 
-print("It will take me " + str(earn_wls) + " days to earn back the amount of wls I spent on " + str(x) + " tackle boxes in which I paid " + str(tackle_rate) + "WLS")
+print("It will take me " + str(earn_wls) + " days to earn back the amount of wls I spent on " + str(x) + " tackle boxes in which I paid " + str(tackle_rate) + "WLS or " + str(tackle_rate_dls) + "DLS at a rate of " + str(rate) + "WLS per tackle box")
