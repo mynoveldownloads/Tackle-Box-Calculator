@@ -51,12 +51,10 @@ print("I will earn " + str(total_earned) + " WLS in total for every harvest (2 d
 
 print(" ")
 
-# Tackle box price rate
+# Number of days needed to get return of investment
 
-tackle_rate = rate * x # Number WLS paid for the number of tackle boxes bought
-tackle_rate_dls = tackle_rate / 100 # Converted to DLS
-earn_wls = tackle_rate / (total_earned / 2) # Daily earnings from every harvest (2 days)
+earn_wls = budget / (total_earned / 2) # Daily earnings from every harvest (2 days)
 
-print("It will take me " + str(earn_wls) + " days to earn back the amount of wls I spent on " + str(x) + " tackle boxes in which I paid " + str(tackle_rate) + "WLS or " + str(tackle_rate_dls) + "DLS at a rate of " + str(rate) + "WLS per tackle box")
+print("It will take me " + str(earn_wls) + " days to earn back the amount of wls I spent on " + str(x) + " tackle boxes in which I paid " + str(budget) + "WLS or " + str(budget_dls) + "DLS at a rate of " + str(rate) + "WLS per tackle box")
 
 print(" ")
