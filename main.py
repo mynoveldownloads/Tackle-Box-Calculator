@@ -1,9 +1,22 @@
 # Tackle Box Calculator
 # Coded on my android phone ;)
 
+# Budget
+
+budget = 100000 # Number of WLS
+budget_dls = budget / 100 # Converted to DLS
+
+rate = 3.33 # Price of 1 tackle box in WLS
+
+buy_tackle = budget / rate # Number of tackle boxes you can afford with the number of WLS you have in your budget
+
+print("I can buy " + str(buy_tackle) + " tackle boxes for " + str(budget) + "WLS or " + str(budget_dls) + "DLS at a rate of " + str(rate) + "WLS per tackle box")
+
 # Item drop rate equation
 
-x = 5000 # Let x be the number of tackle boxes
+# x = 5000 # Let x be the number of tackle boxes
+
+x = buy_tackle
 
 fishingfly_equation = (121/600) * x
 megapellet_equation = (31/600) * x
@@ -32,8 +45,6 @@ total_earned = fishingfly_rate + megapellet_rate + salmon_rate + shiny_rate + sh
 print("I will earn " + str(total_earned) + " WLS in total for every harvest (2 days)")
 
 # Tackle box price rate
-
-rate = 3.33 # Price rate of 1 tackle box (in WLS)
 
 tackle_rate = rate * x 
 tackle_rate_dls = tackle_rate / 100
