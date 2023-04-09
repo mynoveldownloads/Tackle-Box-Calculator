@@ -13,23 +13,27 @@ buy_tackle = budget / rate # Number of tackle boxes you can afford with the numb
 
 print("I can buy " + str(buy_tackle) + " tackle boxes for " + str(budget) + "WLS or " + str(budget_dls) + "DLS at a rate of " + str(rate) + "WLS per tackle box")
 
+print(" ")
+
 # Item drop rate equation 
 # Let x be the number of tackle boxes
 
 # x = 5000
 x = buy_tackle
 
-fishingfly_equation = (121/600) * x
-megapellet_equation = (31/600) * x
-salmon_equation = (151/600) * x
-shiny_equation = (211/600) * x
-shrimp_equation = (47/600) * x
-uranium_equation = (19/600) * x
-wiggly_equation = (93/200) * x
+fishingfly_equation = (121 / 600) * x
+megapellet_equation = (31 / 600) * x
+salmon_equation = (151 / 600) * x
+shiny_equation = (211 / 600) * x
+shrimp_equation = (47 / 600) * x
+uranium_equation = (19 / 600) * x
+wiggly_equation = (93 / 200) * x
 
 total_drops = fishingfly_equation + megapellet_equation + salmon_equation + shiny_equation + shrimp_equation + uranium_equation +  wiggly_equation
 
 print(str(x) + " tackle boxes drop " + str(fishingfly_equation) + " Fishing Fly, " + str(megapellet_equation) + " Mega-Pellet Bait, " + str(salmon_equation) + " Salmon Eggs, " + str(shiny_equation) + " Shiny Flashy Thing, " + str(shrimp_equation) + " Shrimp Lure, " + str(uranium_equation) + " Uranium Glowing Lure and " + str(wiggly_equation) + " Wiggly Worm, " + str(total_drops) + " drops in total per harvest")
+
+print(" ")
 
 # Item price rate
 
@@ -45,10 +49,14 @@ total_earned = fishingfly_rate + megapellet_rate + salmon_rate + shiny_rate + sh
 
 print("I will earn " + str(total_earned) + " WLS in total for every harvest (2 days)")
 
+print(" ")
+
 # Tackle box price rate
 
-tackle_rate = rate * x 
-tackle_rate_dls = tackle_rate / 100
-earn_wls = tackle_rate / (total_earned / 2)
+tackle_rate = rate * x # Number WLS paid for the number of tackle boxes bought
+tackle_rate_dls = tackle_rate / 100 # Converted to DLS
+earn_wls = tackle_rate / (total_earned / 2) # Daily earnings from every harvest (2 days)
 
 print("It will take me " + str(earn_wls) + " days to earn back the amount of wls I spent on " + str(x) + " tackle boxes in which I paid " + str(tackle_rate) + "WLS or " + str(tackle_rate_dls) + "DLS at a rate of " + str(rate) + "WLS per tackle box")
+
+print(" ")
