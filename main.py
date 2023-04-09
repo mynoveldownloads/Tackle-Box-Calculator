@@ -12,10 +12,10 @@ buy_tackle = budget / rate # Number of tackle boxes you can afford with the numb
 
 print("I can buy " + str(buy_tackle) + " tackle boxes for " + str(budget) + "WLS or " + str(budget_dls) + "DLS at a rate of " + str(rate) + "WLS per tackle box")
 
-# Item drop rate equation
+# Item drop rate equation 
+# Let x be the number of tackle boxes
 
-# x = 5000 # Let x be the number of tackle boxes
-
+# x = 5000
 x = buy_tackle
 
 fishingfly_equation = (121/600) * x
