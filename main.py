@@ -1,5 +1,6 @@
 # Tackle Box Calculator
 # Coded on my android phone ;)
+# Copy and paste this source code and run it on an online python interpreter https://www.programiz.com/python-programming/online-compiler/
 
 # Budget
 
