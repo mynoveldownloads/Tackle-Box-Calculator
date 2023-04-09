@@ -53,8 +53,8 @@ print(" ")
 
 # Number of days needed to get return of investment
 
-earn_wls = budget / (total_earned / 2) # Daily earnings from every harvest (2 days)
+return_investment = budget / (total_earned / 2)
 
-print("It will take me " + str(earn_wls) + " days to earn back the amount of wls I spent on " + str(x) + " tackle boxes in which I paid " + str(budget) + "WLS or " + str(budget_dls) + "DLS at a rate of " + str(rate) + "WLS per tackle box")
+print("It will take me " + str(return_investment) + " days to earn back the amount of wls I spent on " + str(x) + " tackle boxes in which I paid " + str(budget) + "WLS or " + str(budget_dls) + "DLS at a rate of " + str(rate) + "WLS per tackle box")
 
 print(" ")
